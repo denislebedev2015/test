@@ -1,1 +1,5 @@
-alert(2);
+function test()
+{
+  alert(2);
+}
+test();
