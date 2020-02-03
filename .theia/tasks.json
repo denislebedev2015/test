@@ -1,0 +1,40 @@
+{
+    "tasks": [
+        {
+            "type": "che",
+            "label": "start",
+            "command": "yarn run start --host 0.0.0.0 --disableHostCheck true",
+            "target": {
+                "workingDir": "${CHE_PROJECTS_ROOT}/angular-realworld-example-app",
+                "component": "nodejs"
+            }
+        },
+        {
+            "type": "che",
+            "label": "lint",
+            "command": "yarn run lint",
+            "target": {
+                "workingDir": "${CHE_PROJECTS_ROOT}/angular-realworld-example-app",
+                "component": "nodejs"
+            }
+        },
+        {
+            "type": "che",
+            "label": "yarn install",
+            "command": "yarn install",
+            "target": {
+                "workingDir": "${CHE_PROJECTS_ROOT}/angular-realworld-example-app",
+                "component": "nodejs"
+            }
+        },
+        {
+            "type": "che",
+            "label": "build",
+            "command": "yarn run build",
+            "target": {
+                "workingDir": "${CHE_PROJECTS_ROOT}/angular-realworld-example-app",
+                "component": "nodejs"
+            }
+        }
+    ]
+}
